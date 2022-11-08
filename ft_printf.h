@@ -1,10 +1,21 @@
-#ifndef		FT_PRINTF_H
-# define	FT_PRINTF_H
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   ft_printf.h                                        :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: mel-harc <marvin@42.fr>                    +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2022/11/08 23:33:06 by mel-harc          #+#    #+#             */
+/*   Updated: 2022/11/08 23:37:07 by mel-harc         ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
 
-#include <stdio.h>
-#include <stdarg.h>
-#include <unistd.h>
-#include <string.h>
+#ifndef FT_PRINTF_H
+# define FT_PRINTF_H
+# include <stdio.h>
+# include <stdarg.h>
+# include <unistd.h>
+# include <string.h>
 
 void	ft_putchar(char c, int *sm);
 void	ft_putstr(char *str, int *sum);

@@ -1,3 +1,15 @@
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   ft_auxilliare.c                                    :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: mel-harc <marvin@42.fr>                    +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2022/11/08 23:39:38 by mel-harc          #+#    #+#             */
+/*   Updated: 2022/11/08 23:41:51 by mel-harc         ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
+
 #include "ft_printf.h"
 
 void	ft_putchar(char c, int *sum)
@@ -40,7 +52,7 @@ void	ft_putnbr(int n, int *sum)
 		ft_putchar(nb + 48, sum);
 }
 
-void	ft_putnbrUn(unsigned n, int *sum)
+void	ft_putnbr_un(unsigned int n, int *sum)
 {
 	long	u;
 
