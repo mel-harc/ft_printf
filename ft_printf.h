@@ -6,7 +6,7 @@
 /*   By: mel-harc <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/11/08 23:33:06 by mel-harc          #+#    #+#             */
-/*   Updated: 2022/11/08 23:37:07 by mel-harc         ###   ########.fr       */
+/*   Updated: 2022/11/09 01:00:24 by mel-harc         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,9 +19,8 @@
 
 void	ft_putchar(char c, int *sm);
 void	ft_putstr(char *str, int *sum);
-size_t	ft_strlen(const char *str);
 void	ft_putnbr(int n, int *sum);
-void	ft_putnbrUn(unsigned int n, int *sum);
+void	ft_putnbr_un(unsigned int n, int *sum);
 void	ft_puthexa(unsigned int n, int *sum, char c);
 void	ft_nbrhexa(unsigned int n, int *sum, char c);
 void	ft_putadd(unsigned long long nb, int *sum);

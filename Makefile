@@ -6,7 +6,7 @@
 #    By: mel-harc <marvin@42.fr>                    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2022/11/08 23:23:21 by mel-harc          #+#    #+#              #
-#    Updated: 2022/11/08 23:28:24 by mel-harc         ###   ########.fr        #
+#    Updated: 2022/11/09 01:04:21 by mel-harc         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -37,3 +37,5 @@ fclean : clean
 		${RM} ${NAME}
 	
 re : fclean all
+
+.PHONY: all clean fclean re 

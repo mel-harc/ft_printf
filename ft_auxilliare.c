@@ -6,7 +6,7 @@
 /*   By: mel-harc <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/11/08 23:39:38 by mel-harc          #+#    #+#             */
-/*   Updated: 2022/11/08 23:41:51 by mel-harc         ###   ########.fr       */
+/*   Updated: 2022/11/09 01:01:06 by mel-harc         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,7 +20,6 @@ void	ft_putchar(char c, int *sum)
 
 void	ft_putstr(char *str, int *sum)
 {
-	size_t	len;
 	size_t	i;
 
 	if (!str)
@@ -61,7 +60,7 @@ void	ft_putnbr_un(unsigned int n, int *sum)
 		ft_putchar(u + 48, sum);
 	else if (u > 9)
 	{
-		ft_putnbrUn(u / 10, sum);
-		ft_putnbrUn(u % 10, sum);
+		ft_putnbr_un(u / 10, sum);
+		ft_putnbr_un(u % 10, sum);
 	}
 }
