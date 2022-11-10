@@ -6,7 +6,7 @@
 #    By: mel-harc <marvin@42.fr>                    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2022/11/08 23:23:21 by mel-harc          #+#    #+#              #
-#    Updated: 2022/11/09 01:04:21 by mel-harc         ###   ########.fr        #
+#    Updated: 2022/11/09 22:09:48 by mel-harc         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -25,16 +25,16 @@ NAME = libftprintf.a
 all : ${NAME}
 
 ${NAME} : ${OBJS}
-			ar -rc ${NAME} ${OBJS}
+	ar rc ${NAME} ${OBJS}
 
 %.o : %.c	ft_printf.h
-		${CC} ${CFLAGS} -c $< -o $@
+	${CC} ${CFLAGS} -c $< -o $@
 
 clean : 
-		${RM} ${OBJS}
+	${RM} ${OBJS}
 
 fclean : clean
-		${RM} ${NAME}
+	${RM} ${NAME}
 	
 re : fclean all
 

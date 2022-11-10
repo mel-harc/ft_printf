@@ -6,7 +6,7 @@
 /*   By: mel-harc <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/11/08 23:39:38 by mel-harc          #+#    #+#             */
-/*   Updated: 2022/11/09 01:01:06 by mel-harc         ###   ########.fr       */
+/*   Updated: 2022/11/10 18:41:59 by mel-harc         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -53,14 +53,11 @@ void	ft_putnbr(int n, int *sum)
 
 void	ft_putnbr_un(unsigned int n, int *sum)
 {
-	long	u;
-
-	u = n;
-	if (u <= 9)
-		ft_putchar(u + 48, sum);
-	else if (u > 9)
+	if (n <= 9)
+		ft_putchar(n + 48, sum);
+	else if (n > 9)
 	{
-		ft_putnbr_un(u / 10, sum);
-		ft_putnbr_un(u % 10, sum);
+		ft_putnbr_un(n / 10, sum);
+		ft_putnbr_un(n % 10, sum);
 	}
 }
